@@ -427,3 +427,41 @@ footer span + span:before{
   object-position:center center !important;
   display:block;
 }
+
+/* Final alignment refinements */
+.hero-art{
+  overflow:visible !important;
+  background:#eef8ff;
+}
+.hero-art img{
+  width:calc(100% + 18px) !important;
+  max-width:none !important;
+  height:100% !important;
+  object-fit:contain !important;
+  object-position:left center !important;
+  transform:translateX(-18px);
+  display:block;
+}
+
+.icon.image-icon{
+  width:72px;
+  height:72px;
+  overflow:visible !important;
+  background:transparent !important;
+  padding:0 !important;
+}
+.icon.image-icon img{
+  width:72px !important;
+  height:72px !important;
+  object-fit:contain !important;
+  border-radius:50%;
+  display:block;
+}
+
+@media (max-width:650px){
+  .icon.image-icon,
+  .icon.image-icon img{
+    width:58px !important;
+    height:58px !important;
+  }
+}

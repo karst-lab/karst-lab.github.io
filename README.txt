@@ -1,11 +1,18 @@
-Karst Lab - new standalone hero illustration
+Karst Lab homepage - final alignment revision
 
 Upload/replace:
+ROOT:
 - index.html
 - styles.css
-- assets/hero-art.jpg
 
-The new hero-art.jpg is the clean standalone illustration approved in ChatGPT.
-It contains no webpage crop artifact or rectangular box and preserves the full milk droplet.
+ASSETS folder:
+- hero-art.jpg
+- icon-virus.png
+- icon-bile-acid.png
+- icon-adipocytes.png
 
-The existing research-panel icon files can remain unchanged.
+Changes:
+- Hero illustration shifted slightly left.
+- Full right edge of hero preserved.
+- No hanging vertical edge between text and artwork.
+- Research-area circles display the complete virus, bile-acid structure, and adipocyte visuals without cropping.
