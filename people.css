@@ -178,3 +178,11 @@
   .alumni-title p { margin-top: 8px; }
   .past-members > p { margin-top: 14px; }
 }
+
+
+/* Sarayu — use the newly supplied photo, no custom crop or zoom */
+.current-row img[src$="sarayu-vanga-new.jpg"] {
+  object-fit: contain !important;
+  object-position: center center !important;
+  background: #eef7fd;
+}

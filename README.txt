@@ -1,11 +1,13 @@
-SARAYU CROP FIX
+SARAYU NEW PHOTO REPLACEMENT
 
-This package uses Stephanie's supplied Sarayu crop EXACTLY as provided.
-The JPG was copied byte-for-byte: it was not cropped, resized, retouched, or regenerated.
+This version uses the newly supplied Sarayu photo exactly as provided.
 
-1. Replace:
-   assets/sarayu-vanga.jpg
+Upload/replace:
+- people.html
+- people.css
+- assets/sarayu-vanga-new.jpg
 
-2. Add the contents of sarayu-crop-fix.css to the END of people.css.
-
-The CSS uses object-fit: contain so the browser does not crop the supplied image again.
+Important:
+- Do NOT rename sarayu-vanga-new.jpg.
+- The new filename is intentional so the browser/GitHub Pages cannot keep showing an older cached Sarayu image.
+- The photo itself was copied byte-for-byte. No crop, resize, retouch, or regeneration was applied.
