@@ -234,3 +234,61 @@
 .people-page .current-grid img[src*="hannah-hayakawa"] {
   object-position: center 24% !important;
 }
+
+
+/* September 2026 portrait framing refinements.
+   These use the original photographs; no faces or people are altered. */
+
+/* Current trainees: keep the single-list format and tighten Sarayu's crop. */
+.people-page img[src*="sarayu"] {
+  object-fit: cover !important;
+  object-position: center 28% !important;
+  transform: scale(1.16);
+}
+
+/* Rishi: slightly tighter portrait framing; background is a neutralized copy only. */
+.people-page img[src*="rishi"] {
+  object-fit: cover !important;
+  object-position: center 22% !important;
+}
+
+/* Recent alumni stay in a 3-column tile grid. */
+.people-page .alumni-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 28px 34px !important;
+  align-items: start !important;
+}
+
+/* Move Zhengzheng upward within her existing frame. */
+.people-page .alumni-grid img[src*="zheng"] {
+  object-fit: cover !important;
+  object-position: center 18% !important;
+}
+
+/* Tighter crop for Emily to minimize the buildings behind her. */
+.people-page .alumni-grid img[src*="emily"] {
+  object-fit: cover !important;
+  object-position: 58% 48% !important;
+  transform: scale(1.18);
+}
+
+/* Prevent zoomed images from spilling outside their portrait boxes. */
+.people-page .current-grid article,
+.people-page .person-card,
+.people-page .alumni-grid article,
+.people-page .alumni-card {
+  overflow: hidden;
+}
+
+/* Responsive alumni layout. */
+@media (max-width: 900px) {
+  .people-page .alumni-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+@media (max-width: 600px) {
+  .people-page .alumni-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
