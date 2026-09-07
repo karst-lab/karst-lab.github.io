@@ -1,29 +1,42 @@
-Karst Lab People page — added former undergraduates
+KARST LAB PEOPLE PAGE — FULL REBUILD WITH USER-CROPPED PHOTOS
 
-Changes:
-- Added Quyen Nguyen:
-  Former Undergraduate Researcher (2020–2024)
-  McNair Scholar, UF SIMR Intern, UFCOM University Scholar, Duke Amgen Scholar
-  PhD Candidate, Duke University
+This package uses the newly cropped 4:3 photos supplied by Stephanie for all current/alumni members
+for whom new crops were provided. These images are copied directly into the site package.
 
-- Added Meera Nair:
-  Former Undergraduate Researcher (2021–2025)
-  UF SIMR Intern
-  MD Candidate, Wake Forest School of Medicine
+Updated photos:
+- Haley Wilt
+- Rishi Gadikota
+- Sarayu Vanga
+- Hannah Hayakawa
+- Lufuno Phophi
+- Amy Peiper
+- Joyce Morales
+- Zhengzheng Hu
+- Marco Grodzki
+- Emily Helm
+- Mallory Cadiz
+- Quyen Nguyen
+- Meera Nair
+- Neha Iyer
 
-- Added Neha Iyer:
-  Former Undergraduate Researcher (2021–2024)
-  UFCOM University Scholar
+Not changed:
+- Stephanie Karst photo
+- Elizabeth Chapman placeholder (photo/bio still pending)
 
-- Added UFCOM University Scholar to Sarayu Vanga's current-trainee entry.
+Content included:
+- Quyen, Meera, and Neha added to Recent Alumni
+- Sarayu labeled UFCOM University Scholar
+- Alumni remain in a three-column grid
+- Alumni role/date format remains: Former [Role] (YYYY–YYYY)
 
-The existing three-column Recent Alumni grid is preserved.
-No changes were made to anyone's appearance.
-
-Upload/replace:
+UPLOAD:
+Replace these at the repository root:
 - people.html
-- assets/quyen-nguyen.jpg
-- assets/meera-nair.jpg
-- assets/neha-iyer.jpg
+- styles.css
+- people.css
 
-No CSS changes are required for this update.
+Then replace the ENTIRE assets folder with the assets folder from this package.
+This avoids old image files or cached crop variants being mixed with the new ones.
+
+IMPORTANT:
+The supplied 4:3 crops are used directly. The page does not apply person-specific crop/position rules.

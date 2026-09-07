@@ -179,10 +179,8 @@
   .past-members > p { margin-top: 14px; }
 }
 
-
-/* Sarayu — use the newly supplied photo, no custom crop or zoom */
-.current-row img[src$="sarayu-vanga-new.jpg"] {
-  object-fit: contain !important;
+/* User-prepared 4:3 crops: display directly, with no per-person zoom or repositioning. */
+.current-row img:not(.pi-row img),
+.alumni-card img {
   object-position: center center !important;
-  background: #eef7fd;
 }
