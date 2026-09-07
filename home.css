@@ -415,3 +415,99 @@
     border-bottom: 10px solid #fff;
   }
 }
+
+
+/* SCALE + HERO-FIT REFINEMENTS
+   Keeps the overall design but makes the homepage feel less oversized. */
+
+.home-page .lab-hero {
+  min-height: 520px;
+  grid-template-columns: minmax(430px, 40%) minmax(0, 60%);
+}
+
+.home-page .lab-hero-copy {
+  padding-top: 44px;
+  padding-bottom: 44px;
+  padding-right: 30px;
+}
+
+.home-page .hero-kicker {
+  font-size: .69rem;
+  margin-bottom: 15px;
+  letter-spacing: .12em;
+}
+
+.home-page .lab-hero h1 {
+  font-size: clamp(3rem, 3.85vw, 4.4rem);
+  line-height: .98;
+  margin-bottom: 11px;
+}
+
+.home-page .lab-hero h2 {
+  font-size: clamp(1.72rem, 2.05vw, 2.25rem);
+  line-height: 1.08;
+  max-width: 590px;
+  margin-bottom: 17px;
+}
+
+.home-page .lab-hero-copy > p {
+  font-size: 1rem;
+  line-height: 1.47;
+  max-width: 600px;
+  margin-bottom: 22px;
+}
+
+.home-page .lab-hero-art {
+  min-height: 520px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.home-page .lab-hero-art img {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  max-height: 520px;
+  object-fit: contain;
+  object-position: center center;
+  background: #eff8ff;
+}
+
+/* Slightly reduce the large research-section heading. */
+.home-page .home-section-intro h2 {
+  font-size: clamp(1.85rem, 2.25vw, 2.45rem);
+  line-height: 1.08;
+}
+
+/* A modest reduction in the research cards keeps the page visually balanced. */
+.home-page .home-research {
+  padding-top: 30px;
+}
+
+.home-page .home-card-image {
+  height: 185px;
+}
+
+.home-page .home-card-copy h3 {
+  font-size: 1.28rem;
+}
+
+@media (max-width:1120px) {
+  .home-page .lab-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .home-page .lab-hero-art,
+  .home-page .lab-hero-art img {
+    min-height: 0;
+    max-height: none;
+  }
+
+  .home-page .lab-hero-art img {
+    height: auto;
+    object-fit: contain;
+  }
+}
