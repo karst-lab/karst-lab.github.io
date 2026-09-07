@@ -1,19 +1,11 @@
-Karst Lab People page — portrait polish + alumni layout
+EMILY PORTRAIT ONLY
 
-Upload/replace at repository root:
-- people.html
-- people-fix.css
+Replace these files in your website repository:
+1. people.html
+2. people-fix.css
+3. assets/emily-helm.jpg
 
-Upload into assets:
-- rishi-gadikota-polished.jpg   (included if generated)
-
-Changes:
-1. Sarayu: tighter webpage crop.
-2. Rishi: more aesthetic neutral background, without changing his appearance.
-3. Zhengzheng: portrait positioned higher in its frame.
-4. Emily: tighter crop to reduce the buildings in the background.
-5. Recent Alumni: fixed at three tiles per row on desktop (2 on tablet, 1 on mobile).
-
-Important:
-- No faces or people's physical appearance were regenerated or edited.
-- Sarayu, Zhengzheng, and Emily changes are CSS framing/cropping only.
+This preserves the Zhengzheng positioning fix and changes only Emily's source image.
+Emily's photo is cropped more tightly to minimize the buildings in the background.
+Her appearance has not been edited or retouched.
+The displayed alumni image dimensions remain unchanged.
