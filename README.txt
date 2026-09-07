@@ -1,11 +1,18 @@
-Karst Lab homepage correction
+Karst Lab polished homepage package
 
-Upload these three items to the ROOT of the GitHub repository, replacing existing versions:
+Upload these items to the ROOT of:
+https://github.com/karst-lab/karst-lab.github.io
+
+Replace:
 - index.html
 - styles.css
 - assets/hero-art.png
 
-Fixes:
-1. Removes the stray 'er' embedded at the left edge of the hero artwork.
-2. Places "Discovering how early life shapes lifelong health." immediately after "University of Florida" in the footer.
-3. Footer tagline is regular text, not italic.
+Changes:
+- Clean hero artwork with the preferred generic chemical structures.
+- Bile-acid/steroid structure retained in the Milk Bile Acids middle research panel.
+- No stray 'r' artifact.
+- Hero artwork is not cropped.
+- Join Our Team: Bold questions. Rigorous science. Meaningful discovery.
+- Footer: Discovering how early life shapes lifelong health.
+- Footer tagline sits directly after University of Florida and is not italic.
