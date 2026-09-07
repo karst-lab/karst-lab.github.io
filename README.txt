@@ -1,16 +1,10 @@
-Karst Lab People page
+PEOPLE PAGE IMAGE FIX
 
-Upload/replace at repository root:
-- people.html
-- styles.css
+Upload BOTH files to the ROOT of the GitHub repository:
+1. people.html — replace the existing people.html
+2. people-fix.css — new file
 
-Upload into assets:
-- stephanie-karst.jpg
-- lufuno-phophi.jpg
-- amy-peiper.jpg
-- joyce-morales.jpg
-- zhengzheng-hu.jpg
-- marco-grodzki.jpg
-- emily-helm.jpg
+Do not put people-fix.css inside the assets folder.
 
-Current trainee photo/bio placeholders are built into people.html and require no additional files.
+No image files need to be replaced. This fix constrains the PI photo and alumni
+photos and creates the intended 3-column alumni grid on desktop.
