@@ -1,42 +1,15 @@
-KARST LAB PEOPLE PAGE — FULL REBUILD WITH USER-CROPPED PHOTOS
+KARST LAB PEOPLE PAGE — FINAL TWEAKS
 
-This package uses the newly cropped 4:3 photos supplied by Stephanie for all current/alumni members
-for whom new crops were provided. These images are copied directly into the site package.
+Changes in this version:
+1. "Our People" changed to "Our Team".
+2. Recent Alumni entries now use "Current position:" before the person's present position, where a current position is listed.
+3. Haley Wilt's NICHD F30 support line is italicized to make the fellowship stand out.
+4. The Lab History box/section at the bottom of the page has been removed.
 
-Updated photos:
-- Haley Wilt
-- Rishi Gadikota
-- Sarayu Vanga
-- Hannah Hayakawa
-- Lufuno Phophi
-- Amy Peiper
-- Joyce Morales
-- Zhengzheng Hu
-- Marco Grodzki
-- Emily Helm
-- Mallory Cadiz
-- Quyen Nguyen
-- Meera Nair
-- Neha Iyer
-
-Not changed:
-- Stephanie Karst photo
-- Elizabeth Chapman placeholder (photo/bio still pending)
-
-Content included:
-- Quyen, Meera, and Neha added to Recent Alumni
-- Sarayu labeled UFCOM University Scholar
-- Alumni remain in a three-column grid
-- Alumni role/date format remains: Former [Role] (YYYY–YYYY)
+All previously supplied user-cropped photos and the three-column alumni layout are retained.
 
 UPLOAD:
-Replace these at the repository root:
+Replace:
 - people.html
-- styles.css
-- people.css
 
-Then replace the ENTIRE assets folder with the assets folder from this package.
-This avoids old image files or cached crop variants being mixed with the new ones.
-
-IMPORTANT:
-The supplied 4:3 crops are used directly. The page does not apply person-specific crop/position rules.
+The package also includes the complete supporting files/assets so it can be used as a full replacement if preferred.
