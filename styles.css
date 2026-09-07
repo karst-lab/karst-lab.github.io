@@ -500,3 +500,15 @@ footer span + span:before{
     height:62px !important;
   }
 }
+
+/* Cache-busted developmental-programming icon */
+.research-card:nth-child(3) .icon.image-icon{
+  overflow:visible !important;
+}
+.research-card:nth-child(3) .icon.image-icon img{
+  width:72px !important;
+  height:72px !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  overflow:visible !important;
+}

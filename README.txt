@@ -1,6 +1,6 @@
-Karst Lab — middle-panel icon correction
+Karst Lab adipocyte icon v2
 
-This package keeps the current approved hero illustration unchanged.
+This version uses a NEW filename so GitHub/browser caching cannot keep showing the old image.
 
 Upload/replace:
 ROOT:
@@ -8,11 +8,8 @@ ROOT:
 - styles.css
 
 ASSETS:
-- icon-virus.png
-- icon-bile-acid.png
-- icon-adipocytes.png
+- icon-adipocytes-v2.png
 
-The three research-area circles now use complete, uncropped visuals:
-- virus particle
-- bile acid chemical structure
-- adipocytes
+Do NOT rename icon-adipocytes-v2.png.
+
+The homepage now points specifically to assets/icon-adipocytes-v2.png.
