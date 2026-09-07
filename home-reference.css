@@ -1,0 +1,316 @@
+
+/* Karst Lab homepage — restored to the reference format */
+
+.home-page{
+  --navy:#082f72;
+  --blue:#0b56bd;
+  --text:#24436d;
+  --line:#dbe8f5;
+  --panel:#f7fbff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+.home-page .site-header{
+  min-height:78px;
+  padding:10px 4.6vw;
+  background:#fff;
+  position:sticky;
+  top:0;
+  z-index:50;
+}
+
+.home-page .site-header .brand-name{
+  font-size:1.05rem;
+  font-weight:750;
+  line-height:1.12;
+  letter-spacing:-.02em;
+  max-width:440px;
+}
+
+.home-page .brand-subtitle{
+  margin-top:5px;
+  font-size:.68rem;
+  letter-spacing:.26em;
+}
+
+.home-page nav{
+  gap:28px;
+}
+
+.home-page nav a{
+  font-size:.9rem;
+}
+
+/* HERO — one continuous visual field, as in the reference */
+.home-page .lab-hero{
+  display:grid;
+  grid-template-columns:40% 60%;
+  min-height:585px;
+  background:
+    linear-gradient(100deg,#fffdfa 0%,#f9fbff 40%,#f0f8ff 100%);
+  border-bottom:1px solid var(--line);
+  overflow:hidden;
+}
+
+.home-page .lab-hero-copy{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:48px 28px 48px 4.5vw;
+  background:transparent;
+  border:0;
+}
+
+.home-page .hero-kicker{
+  margin-bottom:18px;
+  color:#0b4b9f;
+  font-size:.73rem;
+  font-weight:700;
+  letter-spacing:.13em;
+  white-space:nowrap;
+}
+
+.home-page .hero-kicker span{
+  color:#6e8fb9;
+  padding:0 .38em;
+}
+
+.home-page .lab-hero h1{
+  margin:0 0 12px;
+  color:var(--navy);
+  font-size:clamp(3.55rem,4.65vw,5.15rem);
+  line-height:.96;
+  font-weight:760;
+  letter-spacing:-.045em;
+}
+
+.home-page .lab-hero h2{
+  margin:0 0 20px;
+  max-width:610px;
+  color:var(--navy);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(2rem,2.55vw,2.75rem);
+  line-height:1.08;
+  font-weight:500;
+  letter-spacing:-.025em;
+}
+
+.home-page .lab-hero-copy > p{
+  margin:0 0 25px;
+  max-width:610px;
+  color:#183c70;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.08rem;
+  line-height:1.48;
+}
+
+.home-page .lab-hero .button{
+  align-self:flex-start;
+  padding:13px 24px;
+  font-size:1rem;
+  gap:18px;
+}
+
+.home-page .lab-hero-art{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-width:0;
+  overflow:hidden;
+  background:transparent;
+  padding:0;
+}
+
+.home-page .lab-hero-art img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center center;
+  display:block;
+}
+
+/* OUR RESEARCH — no section title above; just the three large tiles like the reference */
+.home-page .home-research{
+  padding:22px 1.25vw 30px;
+  background:#fff;
+  border-bottom:1px solid var(--line);
+}
+
+.home-page .home-section-intro{
+  display:none;
+}
+
+.home-page .home-research-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:8px;
+}
+
+.home-page .home-research-card{
+  display:grid;
+  grid-template-columns:41% 59%;
+  align-items:center;
+  min-height:285px;
+  overflow:hidden;
+  border:0;
+  border-radius:0;
+  background:linear-gradient(135deg,#f7fbff 0%,#f1f8ff 100%);
+  box-shadow:none;
+}
+
+.home-page .home-research-card + .home-research-card{
+  border-left:8px solid #fff;
+}
+
+.home-page .home-card-image{
+  height:100%;
+  min-height:285px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px 12px;
+  background:transparent;
+}
+
+.home-page .home-card-image img{
+  width:100%;
+  height:100%;
+  max-width:180px;
+  max-height:180px;
+  object-fit:contain;
+  display:block;
+}
+
+.home-page .virus-card-image img{
+  max-width:195px;
+  max-height:195px;
+}
+
+.home-page .home-card-copy{
+  padding:30px 28px 28px 6px;
+}
+
+.home-page .home-card-copy h3{
+  margin:0 0 12px;
+  color:var(--navy);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.7rem;
+  line-height:1.06;
+  font-weight:600;
+  letter-spacing:-.02em;
+}
+
+.home-page .home-card-copy p{
+  margin:0 0 20px;
+  min-height:auto;
+  color:#35547d;
+  font-size:1rem;
+  line-height:1.5;
+}
+
+.home-page .home-card-copy a{
+  font-size:1rem;
+  font-weight:700;
+}
+
+/* Keep lower homepage content neat and restrained */
+.home-page .home-lower{
+  display:grid;
+  grid-template-columns:1.55fr .78fr;
+  background:#fff;
+}
+
+.home-page .home-news{
+  padding:24px 3.2vw 26px 4.6vw;
+  border-right:1px solid var(--line);
+}
+
+.home-page .home-join{
+  padding:24px 4.6vw 26px 3vw;
+  background:linear-gradient(135deg,#fbfdff 0%,#eef7ff 100%);
+}
+
+.home-page .section-heading h2,
+.home-page .home-join h2{
+  font-size:1.5rem;
+  font-weight:750;
+}
+
+.home-page footer{
+  padding-top:12px;
+  padding-bottom:12px;
+  font-size:.72rem;
+}
+
+/* Responsive */
+@media (max-width:1100px){
+  .home-page .site-header{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .home-page .lab-hero{
+    grid-template-columns:1fr;
+    min-height:0;
+  }
+
+  .home-page .lab-hero-copy{
+    padding:40px 6vw 20px;
+  }
+
+  .home-page .hero-kicker{
+    white-space:normal;
+  }
+
+  .home-page .lab-hero-art{
+    padding:0 4vw 20px;
+  }
+
+  .home-page .lab-hero-art img{
+    height:auto;
+  }
+}
+
+@media (max-width:900px){
+  .home-page .home-research-grid{
+    grid-template-columns:1fr;
+  }
+
+  .home-page .home-research-card + .home-research-card{
+    border-left:0;
+    border-top:8px solid #fff;
+  }
+
+  .home-page .home-lower{
+    grid-template-columns:1fr;
+  }
+
+  .home-page .home-news{
+    border-right:0;
+    border-bottom:1px solid var(--line);
+  }
+}
+
+@media (max-width:650px){
+  .home-page .lab-hero h1{
+    font-size:3rem;
+  }
+
+  .home-page .lab-hero h2{
+    font-size:1.8rem;
+  }
+
+  .home-page .home-research-card{
+    grid-template-columns:1fr;
+  }
+
+  .home-page .home-card-image{
+    min-height:170px;
+  }
+
+  .home-page .home-card-copy{
+    padding:0 24px 24px;
+    text-align:center;
+  }
+}

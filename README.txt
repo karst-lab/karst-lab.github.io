@@ -1,17 +1,23 @@
-KARST LAB HOMEPAGE — RETURN TO UNIFIED HERO FORMAT
+KARST LAB HOMEPAGE — REVERTED TO THE REFERENCE FORMAT
 
-This version restores the layout shown in your reference image:
+This version intentionally returns the homepage to the format in your reference image.
 
-- Hero text and scientific illustration sit together in one continuous pale-blue box.
-- No hard vertical split or separate text/image panels.
-- "Karst Laboratory" remains prominent but not oversized.
-- The full scientific illustration remains visible on the right.
-- "Our Research" returns to three larger visual cards, matching the earlier format.
-- The lower Latest News / Join Our Team section remains compact and aligned.
+What is restored:
+- One continuous hero area containing both text and illustration
+- Large "Karst Laboratory" hero title
+- Serif scientific statement underneath
+- Three large horizontal research tiles directly beneath the hero
+- No "Our Research / From early-life signals..." heading above those tiles
+
+The ONE intentional change from the reference:
+- Header branding reads "Department of Molecular Genetics and Microbiology"
+  with "UNIVERSITY OF FLORIDA" beneath it.
+
+The lower Latest News / Join Our Team / footer content is retained.
 
 UPLOAD / REPLACE:
 1. Replace index.html
-2. Add home-unified.css
-3. Keep assets/home-hero-polished.jpg in the assets folder (already included in the prior package).
+2. Add home-reference.css
+3. Keep assets/home-hero-polished.jpg in the assets folder
 
-The new index.html references home-unified.css. Older homepage CSS files can remain in the repository.
+The new index.html points to home-reference.css, so older homepage CSS files will not affect it.
