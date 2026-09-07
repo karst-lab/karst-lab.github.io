@@ -1,15 +1,11 @@
-Karst Lab final homepage replacement package
+Karst Lab homepage correction
 
-Upload these items to the ROOT of the GitHub repository:
+Upload these three items to the ROOT of the GitHub repository, replacing existing versions:
 - index.html
 - styles.css
 - assets/hero-art.png
 
-Changes:
-- Removes the stray 'er' from the hero artwork.
-- Join Our Team copy revised.
-- Join tagline: Bold questions. Rigorous science. Meaningful discovery.
-- Footer tagline: Discovering how early life shapes lifelong health.
-
-Repository:
-https://github.com/karst-lab/karst-lab.github.io
+Fixes:
+1. Removes the stray 'er' embedded at the left edge of the hero artwork.
+2. Places "Discovering how early life shapes lifelong health." immediately after "University of Florida" in the footer.
+3. Footer tagline is regular text, not italic.

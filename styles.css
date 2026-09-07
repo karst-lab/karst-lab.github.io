@@ -300,8 +300,8 @@ footer span + span:before{
 }
 
 .footer-tagline{
-  margin-left:auto;
-  font-style:italic;
+  margin-left:0;
+  font-style:normal;
 }
 
 @media (max-width:1000px){
@@ -376,4 +376,10 @@ footer span + span:before{
     padding:15px 0 0;
     margin-top:15px;
   }
+}
+
+/* Final footer placement */
+.footer-tagline{
+  margin-left:0 !important;
+  font-style:normal !important;
 }
