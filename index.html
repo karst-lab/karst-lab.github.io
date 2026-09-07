@@ -4,14 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Karst Laboratory | University of Florida</title>
-  <meta name="description" content="The Karst Laboratory studies how maternal and microbial signals shape neonatal immunity, development, and lifelong health.">
+  <meta name="description" content="The Karst Laboratory studies how maternal factors, microbial metabolites, and viruses interact during early life to shape neonatal disease, tissue development, and long-term metabolic health.">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="home.css">
 </head>
 
-<body>
+<body class="home-page">
 <header class="site-header">
   <div class="brand">
-    <a href="index.html" class="brand-name">Karst Laboratory</a>
+    <a href="index.html" class="brand-name">Department of Molecular Genetics and Microbiology</a>
     <div class="brand-subtitle">UNIVERSITY OF FLORIDA</div>
   </div>
 
@@ -27,51 +28,68 @@
 </header>
 
 <main>
-  <section class="hero">
-    <div class="hero-copy">
-      <h1>Milk as a messenger</h1>
-      <div class="hero-rule"></div>
-      <h2>Maternal bile acids shape<br>neonatal and lifelong health</h2>
+  <section class="lab-hero">
+    <div class="lab-hero-copy">
+      <div class="hero-kicker">VIRUSES <span>·</span> MICROBIOME <span>·</span> MATERNAL SIGNALS <span>·</span> EARLY-LIFE HEALTH</div>
+      <h1>Karst Laboratory</h1>
+      <h2>How early-life signals shape immunity, development, and lifelong health.</h2>
+      <p>We study how maternal factors, microbial metabolites, and viruses interact during early life to shape neonatal disease and long-term physiology.</p>
       <a class="button" href="research.html">Explore Our Research <span>→</span></a>
     </div>
 
-    <div class="hero-art">
-      <img src="assets/hero-art.jpg"
-           alt="Scientific illustration showing breastfeeding, milk-borne metabolites, immune health, metabolic health, and development from infancy to adulthood.">
+    <div class="lab-hero-art">
+      <img src="assets/home-hero-illustration.jpg"
+           alt="Scientific illustration showing maternal microbiota influencing bile acids in milk, which shape antiviral immunity, adipose tissue development, and long-term metabolic health.">
     </div>
   </section>
 
-  <section class="research-grid" aria-label="Research areas">
-    <article class="research-card">
-      <div class="icon image-icon"><img src="assets/icon-virus.png" alt="Virus particle"></div>
+  <section class="home-research" aria-labelledby="research-heading">
+    <div class="home-section-intro">
       <div>
-        <h3>Neonatal Immunity</h3>
-        <p>How maternal signals and the early microbiome shape antiviral defenses in early life.</p>
-        <a href="research.html#immunity">Learn more →</a>
+        <div class="eyebrow">OUR RESEARCH</div>
+        <h2 id="research-heading">From early-life signals to lifelong health</h2>
       </div>
-    </article>
+      <a href="research.html" class="section-link">Learn more about our research →</a>
+    </div>
 
-    <article class="research-card">
-      <div class="icon image-icon"><img src="assets/icon-bile-acid.png" alt="Bile acid chemical structure"></div>
-      <div>
-        <h3>Milk Bile Acids</h3>
-        <p>How milk-borne bile acids act as developmental signals that influence immunity, growth, and metabolism.</p>
-        <a href="research.html#bile-acids">Learn more →</a>
-      </div>
-    </article>
+    <div class="home-research-grid">
+      <article class="home-research-card">
+        <div class="home-card-image virus-card-image">
+          <img src="assets/icon-norovirus.png" alt="Nonenveloped norovirus virion">
+        </div>
+        <div class="home-card-copy">
+          <h3>Viruses &amp; Neonatal Immunity</h3>
+          <p>How viruses, the microbiome, and maternal signals shape antiviral defenses and disease susceptibility in early life.</p>
+          <a href="research.html#immunity">Learn more →</a>
+        </div>
+      </article>
 
-    <article class="research-card">
-      <div class="icon image-icon"><img src="assets/icon-adipocytes-v2.png" alt="Adipocytes"></div>
-      <div>
-        <h3>Developmental Programming</h3>
-        <p>How early-life exposures influence tissue development and lifelong metabolic health.</p>
-        <a href="research.html#programming">Learn more →</a>
-      </div>
-    </article>
+      <article class="home-research-card">
+        <div class="home-card-image">
+          <img src="assets/icon-bile-acid.png" alt="Bile acid chemical structure">
+        </div>
+        <div class="home-card-copy">
+          <h3>Maternal &amp; Microbial Metabolites</h3>
+          <p>How bile acids carried in milk function as signaling molecules that regulate neonatal physiology.</p>
+          <a href="research.html#bile-acids">Learn more →</a>
+        </div>
+      </article>
+
+      <article class="home-research-card">
+        <div class="home-card-image">
+          <img src="assets/icon-adipocytes.png" alt="Adipose tissue">
+        </div>
+        <div class="home-card-copy">
+          <h3>Developmental Programming</h3>
+          <p>How transient exposures during early life reshape tissue development and lifelong metabolic health.</p>
+          <a href="research.html#programming">Learn more →</a>
+        </div>
+      </article>
+    </div>
   </section>
 
-  <section class="lower-grid">
-    <div class="news-panel">
+  <section class="home-lower">
+    <div class="news-panel home-news">
       <div class="section-heading">
         <h2>Latest News</h2>
         <a href="news.html">View all news →</a>
@@ -98,10 +116,11 @@
       </div>
     </div>
 
-    <aside class="join-panel">
+    <aside class="join-panel home-join">
+      <div class="eyebrow">JOIN THE LAB</div>
       <h2>Join Our Team</h2>
       <p>We welcome curious, creative scientists who want to tackle important questions in early-life biology through rigorous, collaborative research.</p>
-      <a class="button" href="join.html">View Open Positions <span>→</span></a>
+      <a class="button outline-button" href="join.html">View Open Positions <span>→</span></a>
       <p class="tagline"><strong>Bold questions. Rigorous science. Meaningful discovery.</strong></p>
     </aside>
   </section>

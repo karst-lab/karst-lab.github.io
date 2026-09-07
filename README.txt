@@ -1,15 +1,24 @@
-KARST LAB PEOPLE PAGE — FINAL TWEAKS
+KARST LAB HOMEPAGE — FINAL REFINED VERSION
 
-Changes in this version:
-1. "Our People" changed to "Our Team".
-2. Recent Alumni entries now use "Current position:" before the person's present position, where a current position is listed.
-3. Haley Wilt's NICHD F30 support line is italicized to make the fellowship stand out.
-4. The Lab History box/section at the bottom of the page has been removed.
+Changes in this package:
+1. Uses a clean sans-serif font treatment similar to the previous homepage.
+2. "Karst Laboratory" remains prominent in the hero but is slightly smaller.
+3. The hero now has a much cleaner visual separation between:
+   - left text panel
+   - right scientific illustration
+4. Header branding changed from "Karst Laboratory" to:
+   Department of Molecular Genetics and Microbiology
+   UNIVERSITY OF FLORIDA
+5. The hero illustration uses the preferred mother-and-infant composition from the prior design direction.
+6. Scientific flow remains:
+   maternal microbiota → bile acids in milk →
+   antiviral immunity / tissue development / long-term metabolic health.
+7. The remainder of the homepage (research overview, Latest News, Join Our Team, footer) is retained.
 
-All previously supplied user-cropped photos and the three-column alumni layout are retained.
+UPLOAD / REPLACE:
+- index.html
+- home.css
+- assets/home-hero-illustration.jpg
 
-UPLOAD:
-Replace:
-- people.html
-
-The package also includes the complete supporting files/assets so it can be used as a full replacement if preferred.
+You do NOT need to replace styles.css for these refinements.
+The ZIP contains the complete homepage package as a backup.

@@ -1,0 +1,417 @@
+
+/* Homepage redesign: research-lab-first identity */
+.home-page{
+  --home-navy:#082f72;
+  --home-blue:#0b56bd;
+  --home-ink:#24436d;
+  --home-soft:#f4f9ff;
+  --home-cream:#fcfaf6;
+  --home-line:#dbe8f5;
+}
+
+.home-page .site-header{
+  position:sticky;
+  top:0;
+  z-index:50;
+}
+
+/* Hero */
+.lab-hero{
+  display:grid;
+  grid-template-columns:minmax(430px, .92fr) minmax(560px, 1.35fr);
+  min-height:575px;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 72% 45%, rgba(225,240,255,.62), transparent 34%),
+    linear-gradient(100deg, #fdfbf7 0%, #fbfbf8 45%, #f4f9ff 100%);
+  border-bottom:1px solid var(--home-line);
+}
+
+.lab-hero-copy{
+  align-self:center;
+  padding:58px 28px 58px 4.6vw;
+  position:relative;
+  z-index:2;
+}
+
+.hero-kicker,
+.eyebrow{
+  color:#0b4b9f;
+  font-weight:700;
+  letter-spacing:.13em;
+  font-size:.78rem;
+}
+
+.hero-kicker{
+  margin-bottom:18px;
+  white-space:nowrap;
+}
+
+.hero-kicker span{
+  padding:0 .38em;
+  color:#6b8fbf;
+}
+
+.lab-hero h1{
+  margin:0 0 12px;
+  color:var(--home-navy);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(3.6rem,5vw,5.7rem);
+  line-height:.94;
+  font-weight:700;
+  letter-spacing:-.045em;
+}
+
+.lab-hero h2{
+  margin:0 0 20px;
+  max-width:650px;
+  color:var(--home-navy);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(2rem,2.75vw,3rem);
+  line-height:1.08;
+  letter-spacing:-.025em;
+  font-weight:500;
+}
+
+.lab-hero-copy > p{
+  margin:0 0 25px;
+  max-width:650px;
+  color:#183c70;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.15rem;
+  line-height:1.5;
+}
+
+.lab-hero-art{
+  min-width:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  padding:0;
+  background:transparent;
+}
+
+.lab-hero-art img{
+  width:100%;
+  height:100%;
+  min-height:575px;
+  object-fit:cover;
+  object-position:center center;
+  display:block;
+  mix-blend-mode:multiply;
+}
+
+/* Research overview */
+.home-research{
+  padding:34px 4.6vw 38px;
+  background:#fff;
+  border-bottom:1px solid var(--home-line);
+}
+
+.home-section-intro{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:30px;
+  margin-bottom:22px;
+}
+
+.home-section-intro h2{
+  margin:5px 0 0;
+  color:var(--home-navy);
+  font-family:Georgia,"Times New Roman",serif;
+  font-weight:600;
+  font-size:clamp(2rem,2.8vw,3rem);
+  letter-spacing:-.025em;
+}
+
+.section-link{
+  white-space:nowrap;
+  padding-bottom:5px;
+  font-weight:650;
+}
+
+.home-research-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+}
+
+.home-research-card{
+  overflow:hidden;
+  border:1px solid #e3edf7;
+  border-radius:6px;
+  background:linear-gradient(145deg,#fbfdff 0%,#f3f9ff 100%);
+  box-shadow:0 7px 22px rgba(19,62,116,.045);
+}
+
+.home-card-image{
+  height:205px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:22px;
+  background:
+    radial-gradient(circle at center, rgba(217,235,253,.58), transparent 62%),
+    #f8fbff;
+}
+
+.home-card-image img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
+
+.virus-card-image img{
+  max-width:190px;
+  max-height:190px;
+}
+
+.home-card-copy{
+  padding:19px 22px 22px;
+}
+
+.home-card-copy h3{
+  margin:0 0 9px;
+  color:var(--home-navy);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.42rem;
+  line-height:1.08;
+}
+
+.home-card-copy p{
+  margin:0 0 15px;
+  min-height:4.2em;
+  line-height:1.42;
+  font-size:.96rem;
+}
+
+.home-card-copy a{
+  font-weight:700;
+}
+
+/* Bottom row */
+.home-lower{
+  display:grid;
+  grid-template-columns:1.5fr .72fr;
+  background:#fff;
+}
+
+.home-news{
+  padding:28px 3.5vw 31px 4.6vw;
+  border-right:1px solid var(--home-line);
+}
+
+.home-join{
+  padding:28px 4.6vw 31px 3vw;
+  background:linear-gradient(135deg,#fbfdff 0%,#eef7ff 100%);
+}
+
+.home-join .eyebrow{
+  margin-bottom:5px;
+}
+
+.home-join .outline-button{
+  background:#fff;
+  color:#0753b1;
+  border:1.5px solid #0753b1;
+  box-shadow:none;
+}
+
+.home-join .outline-button:hover{
+  background:#f4f9ff;
+}
+
+/* Keep the real nonenveloped virion transparent instead of forcing a circular crop. */
+.home-page .virus-card-image img{
+  border-radius:0 !important;
+}
+
+/* Responsive */
+@media (max-width:1120px){
+  .lab-hero{
+    grid-template-columns:1fr;
+  }
+
+  .lab-hero-copy{
+    padding:50px 6vw 24px;
+  }
+
+  .hero-kicker{
+    white-space:normal;
+  }
+
+  .lab-hero-art{
+    min-height:470px;
+  }
+
+  .lab-hero-art img{
+    min-height:470px;
+    object-fit:cover;
+  }
+}
+
+@media (max-width:900px){
+  .home-research-grid{
+    grid-template-columns:1fr;
+  }
+
+  .home-research-card{
+    display:grid;
+    grid-template-columns:210px 1fr;
+  }
+
+  .home-card-image{
+    height:auto;
+    min-height:180px;
+  }
+
+  .home-card-copy p{
+    min-height:0;
+  }
+
+  .home-lower{
+    grid-template-columns:1fr;
+  }
+
+  .home-news{
+    border-right:0;
+    border-bottom:1px solid var(--home-line);
+  }
+}
+
+@media (max-width:650px){
+  .lab-hero-copy{
+    padding:38px 6vw 22px;
+  }
+
+  .lab-hero h1{
+    font-size:3.2rem;
+  }
+
+  .lab-hero-art,
+  .lab-hero-art img{
+    min-height:360px;
+  }
+
+  .home-section-intro{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .home-research-card{
+    display:block;
+  }
+
+  .home-card-image{
+    height:185px;
+  }
+
+  .home-news,
+  .home-join,
+  .home-research{
+    padding-left:6vw;
+    padding-right:6vw;
+  }
+}
+
+
+/* FINAL HOMEPAGE REFINEMENTS — September 2026
+   Typography follows the cleaner sans-serif character of the previous homepage.
+   Hero copy and illustration are deliberately separated into distinct panels. */
+
+.home-page,
+.home-page button,
+.home-page input,
+.home-page textarea,
+.home-page select {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-page .site-header .brand-name,
+.home-page nav,
+.home-page .lab-hero h1,
+.home-page .lab-hero h2,
+.home-page .lab-hero-copy > p,
+.home-page .home-section-intro h2,
+.home-page .home-card-copy h3,
+.home-page .home-card-copy p,
+.home-page .home-lower h2,
+.home-page .home-lower p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Department identity in the header rather than repeating Karst Laboratory. */
+.home-page .site-header .brand-name {
+  font-size: 1.12rem;
+  line-height: 1.12;
+  font-weight: 750;
+  letter-spacing: -0.018em;
+  max-width: 440px;
+}
+
+/* A cleaner 42/58 split creates a distinct text panel and image panel. */
+.home-page .lab-hero {
+  grid-template-columns: minmax(455px, 42%) minmax(0, 58%);
+  background: #fff;
+}
+
+.home-page .lab-hero-copy {
+  background: linear-gradient(135deg, #f4faff 0%, #edf7ff 100%);
+  border-right: 12px solid #fff;
+  padding-left: 4.6vw;
+  padding-right: 34px;
+}
+
+/* Slightly smaller than the previous mockup, while remaining the hero anchor. */
+.home-page .lab-hero h1 {
+  font-size: clamp(3.35rem, 4.35vw, 5.05rem);
+  line-height: .98;
+  font-weight: 760;
+  letter-spacing: -0.045em;
+  margin-bottom: 12px;
+}
+
+.home-page .lab-hero h2 {
+  font-size: clamp(1.9rem, 2.45vw, 2.72rem);
+  line-height: 1.09;
+  font-weight: 720;
+  letter-spacing: -0.035em;
+}
+
+.home-page .lab-hero-copy > p {
+  font-size: 1.08rem;
+  line-height: 1.48;
+}
+
+.home-page .lab-hero-art {
+  background: #eef8ff;
+  border-left: 1px solid #dcecf8;
+}
+
+.home-page .lab-hero-art img {
+  mix-blend-mode: normal;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* Match the stronger, cleaner headings of the previous homepage. */
+.home-page .home-section-intro h2,
+.home-page .home-card-copy h3,
+.home-page .home-lower h2 {
+  font-weight: 750;
+  letter-spacing: -0.025em;
+}
+
+@media (max-width:1120px) {
+  .home-page .lab-hero {
+    grid-template-columns: 1fr;
+  }
+  .home-page .lab-hero-copy {
+    border-right: 0;
+    border-bottom: 10px solid #fff;
+  }
+}
