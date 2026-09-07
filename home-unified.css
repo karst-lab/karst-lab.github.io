@@ -1,0 +1,389 @@
+
+/* Karst Lab homepage — unified hero + large research cards */
+
+.home-page{
+  --home-navy:#082f72;
+  --home-blue:#0b56bd;
+  --home-text:#24436d;
+  --home-line:#d9e7f5;
+  --home-pale:#eef8ff;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+}
+
+/* Header */
+.home-page .site-header{
+  min-height:72px;
+  padding:9px 4.6vw;
+  position:sticky;
+  top:0;
+  z-index:50;
+}
+
+.home-page .site-header .brand-name{
+  font-size:1.05rem;
+  line-height:1.12;
+  font-weight:760;
+  letter-spacing:-.018em;
+  max-width:430px;
+}
+
+.home-page .brand-subtitle{
+  margin-top:5px;
+  font-size:.66rem;
+}
+
+.home-page nav{
+  gap:25px;
+}
+
+.home-page nav a{
+  font-size:.89rem;
+}
+
+/* Unified hero: text + illustration in one continuous box */
+.home-page .lab-hero{
+  display:grid;
+  grid-template-columns:38% 62%;
+  min-height:520px;
+  margin:0;
+  background:linear-gradient(100deg,#f7fbff 0%,#f4faff 38%,#eef8ff 100%);
+  border-bottom:1px solid var(--home-line);
+  overflow:hidden;
+}
+
+.home-page .lab-hero-copy{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:40px 28px 40px 4.6vw;
+  background:transparent;
+  border:0;
+  position:relative;
+  z-index:2;
+}
+
+.home-page .hero-kicker,
+.home-page .eyebrow{
+  color:#0b4b9f;
+  font-weight:760;
+  letter-spacing:.13em;
+  font-size:.66rem;
+}
+
+.home-page .hero-kicker{
+  margin-bottom:14px;
+  white-space:nowrap;
+}
+
+.home-page .hero-kicker span{
+  color:#7595bc;
+  padding:0 .34em;
+}
+
+.home-page .lab-hero h1{
+  margin:0 0 10px;
+  color:var(--home-navy);
+  font-size:clamp(2.9rem,3.3vw,3.8rem);
+  line-height:.98;
+  font-weight:780;
+  letter-spacing:-.045em;
+}
+
+.home-page .lab-hero h2{
+  margin:0 0 15px;
+  max-width:550px;
+  color:var(--home-navy);
+  font-size:clamp(1.55rem,1.72vw,1.86rem);
+  line-height:1.1;
+  font-weight:740;
+  letter-spacing:-.032em;
+}
+
+.home-page .lab-hero-copy > p{
+  margin:0 0 19px;
+  max-width:545px;
+  color:#183c70;
+  font-size:.91rem;
+  line-height:1.48;
+}
+
+.home-page .lab-hero .button{
+  align-self:flex-start;
+  padding:11px 19px;
+  font-size:.88rem;
+  gap:18px;
+}
+
+.home-page .lab-hero-art{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-width:0;
+  overflow:hidden;
+  background:transparent;
+  padding:0 18px 0 0;
+}
+
+.home-page .lab-hero-art img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center center;
+  display:block;
+}
+
+/* Our Research section — larger cards matching the reference format */
+.home-page .home-research{
+  padding:30px 4.6vw 34px;
+  background:#fff;
+  border-bottom:1px solid var(--home-line);
+}
+
+.home-page .home-section-intro{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:28px;
+  margin-bottom:20px;
+}
+
+.home-page .home-section-intro h2{
+  margin:4px 0 0;
+  color:var(--home-navy);
+  font-size:clamp(1.9rem,2.2vw,2.35rem);
+  line-height:1.08;
+  font-weight:760;
+  letter-spacing:-.032em;
+}
+
+.home-page .section-link{
+  flex:0 0 auto;
+  padding-bottom:3px;
+  font-size:.86rem;
+  font-weight:700;
+}
+
+.home-page .home-research-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+}
+
+.home-page .home-research-card{
+  overflow:hidden;
+  border:1px solid #e1ebf5;
+  border-radius:7px;
+  background:linear-gradient(145deg,#fbfdff 0%,#f3f9ff 100%);
+  box-shadow:0 6px 18px rgba(19,62,116,.04);
+}
+
+.home-page .home-card-image{
+  height:165px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:18px;
+  background:radial-gradient(circle at center,rgba(217,235,253,.52),transparent 62%);
+}
+
+.home-page .home-card-image img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
+
+.home-page .virus-card-image img{
+  max-width:150px;
+  max-height:150px;
+}
+
+.home-page .home-card-copy{
+  padding:16px 18px 18px;
+}
+
+.home-page .home-card-copy h3{
+  margin:0 0 7px;
+  color:var(--home-navy);
+  font-size:1.13rem;
+  line-height:1.12;
+  font-weight:760;
+  letter-spacing:-.015em;
+}
+
+.home-page .home-card-copy p{
+  margin:0 0 12px;
+  min-height:3.9em;
+  color:var(--home-text);
+  font-size:.86rem;
+  line-height:1.42;
+}
+
+.home-page .home-card-copy a{
+  font-size:.86rem;
+  font-weight:700;
+}
+
+/* Lower section tightened */
+.home-page .home-lower{
+  display:grid;
+  grid-template-columns:1.55fr .78fr;
+  min-height:235px;
+  background:#fff;
+}
+
+.home-page .home-news{
+  padding:22px 3.2vw 23px 4.6vw;
+  border-right:1px solid var(--home-line);
+}
+
+.home-page .section-heading{
+  padding-bottom:7px;
+}
+
+.home-page .section-heading h2,
+.home-page .home-join h2{
+  font-size:1.45rem;
+  line-height:1.05;
+  font-weight:760;
+  letter-spacing:-.025em;
+}
+
+.home-page .news-items{
+  margin-top:12px;
+}
+
+.home-page .news-items article{
+  min-height:72px;
+}
+
+.home-page .news-items h4{
+  font-size:.86rem;
+}
+
+.home-page .news-items p{
+  font-size:.79rem;
+  line-height:1.3;
+}
+
+.home-page .home-join{
+  padding:22px 4.6vw 23px 3vw;
+  background:linear-gradient(135deg,#fbfdff 0%,#eef7ff 100%);
+}
+
+.home-page .home-join > p:not(.tagline){
+  margin:8px 0 12px;
+  font-size:.86rem;
+  line-height:1.4;
+}
+
+.home-page .home-join .outline-button{
+  background:#fff;
+  color:#0753b1;
+  border:1.5px solid #0753b1;
+  box-shadow:none;
+  padding:10px 18px;
+  font-size:.86rem;
+}
+
+.home-page .tagline{
+  margin-top:13px!important;
+  font-size:.88rem!important;
+  line-height:1.35;
+}
+
+.home-page footer{
+  padding-top:12px;
+  padding-bottom:12px;
+  font-size:.72rem;
+}
+
+/* Responsive */
+@media (max-width:1100px){
+  .home-page .site-header{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .home-page .lab-hero{
+    grid-template-columns:1fr;
+    min-height:0;
+  }
+
+  .home-page .lab-hero-copy{
+    padding:34px 6vw 24px;
+  }
+
+  .home-page .hero-kicker{
+    white-space:normal;
+  }
+
+  .home-page .lab-hero-art{
+    padding:0 4vw 22px;
+  }
+
+  .home-page .lab-hero-art img{
+    height:auto;
+    width:100%;
+  }
+}
+
+@media (max-width:900px){
+  .home-page .home-section-intro{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:8px;
+  }
+
+  .home-page .home-research-grid{
+    grid-template-columns:1fr;
+  }
+
+  .home-page .home-research-card{
+    display:grid;
+    grid-template-columns:190px 1fr;
+  }
+
+  .home-page .home-card-image{
+    height:auto;
+    min-height:155px;
+  }
+
+  .home-page .home-card-copy p{
+    min-height:0;
+  }
+
+  .home-page .home-lower{
+    grid-template-columns:1fr;
+  }
+
+  .home-page .home-news{
+    border-right:0;
+    border-bottom:1px solid var(--home-line);
+  }
+}
+
+@media (max-width:620px){
+  .home-page .lab-hero h1{
+    font-size:2.65rem;
+  }
+
+  .home-page .lab-hero h2{
+    font-size:1.48rem;
+  }
+
+  .home-page .home-research-card{
+    display:block;
+  }
+
+  .home-page .home-card-image{
+    height:155px;
+  }
+
+  .home-page .home-research,
+  .home-page .home-news,
+  .home-page .home-join{
+    padding-left:6vw;
+    padding-right:6vw;
+  }
+}

@@ -1,22 +1,17 @@
-KARST LAB HOMEPAGE — POLISHED VERSION
+KARST LAB HOMEPAGE — RETURN TO UNIFIED HERO FORMAT
 
-This rebuild removes the accumulated CSS patches and restores the tighter, more polished
-proportions of the earlier homepage.
+This version restores the layout shown in your reference image:
 
-Main improvements:
-- Hero is a fixed, balanced 40/60 text/image split with no large empty band.
-- Hero illustration is a clean crop with no stray fragments from the left text panel.
-- All of the illustration fits inside the right panel.
-- Research section returns to a compact three-column strip rather than oversized cards.
-- Section heading and research cards align to the same margins.
-- Latest News and Join Our Team are tightened so they do not leave a large empty lower area.
-- Typography and spacing are more consistent throughout.
-- No inline override styles and no stack of old homepage patches.
+- Hero text and scientific illustration sit together in one continuous pale-blue box.
+- No hard vertical split or separate text/image panels.
+- "Karst Laboratory" remains prominent but not oversized.
+- The full scientific illustration remains visible on the right.
+- "Our Research" returns to three larger visual cards, matching the earlier format.
+- The lower Latest News / Join Our Team section remains compact and aligned.
 
 UPLOAD / REPLACE:
 1. Replace index.html
-2. Add home-polished.css
-3. Add assets/home-hero-polished.jpg
+2. Add home-unified.css
+3. Keep assets/home-hero-polished.jpg in the assets folder (already included in the prior package).
 
-The new index.html references home-polished.css, so old home.css/home-v2.css files can remain
-in the repository without affecting this page.
+The new index.html references home-unified.css. Older homepage CSS files can remain in the repository.
