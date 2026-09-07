@@ -225,3 +225,12 @@
     max-width: 260px !important;
   }
 }
+
+
+/* Haley and Hannah current-member photo framing — original images only */
+.people-page .current-grid img[src*="haley-wilt"] {
+  object-position: center 18% !important;
+}
+.people-page .current-grid img[src*="hannah-hayakawa"] {
+  object-position: center 24% !important;
+}

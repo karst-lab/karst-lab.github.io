@@ -1,23 +1,14 @@
-KARST LAB PEOPLE PAGE — CURRENT TRAINEE LAYOUT UPDATE
+Karst Lab People page — Haley Wilt and Hannah Hayakawa update
 
-WHAT CHANGED
-- Current trainees are now displayed in ONE vertical list rather than two columns.
-- Current trainee photos are 300 x 375 px on desktop, matching the PI portrait dimensions.
-- Sarayu's ORIGINAL supplied photograph is framed as a head-and-shoulders portrait using CSS only.
-- Rishi's ORIGINAL supplied photograph is also used unchanged.
-- No person's appearance has been edited, regenerated, retouched, or altered.
-- Remaining current-member placeholders are enlarged to match the same layout.
-- Recent Alumni layout remains unchanged.
+Upload/replace at repository root:
+- people.html
+- people-fix.css
 
-UPLOAD INSTRUCTIONS
+Upload into assets:
+- haley-wilt.jpg
+- hannah-hayakawa.jpg
 
-At the ROOT of the GitHub repository, replace:
-1. people.html
-2. people-fix.css
-
-Inside the assets folder, upload/replace:
-3. rishi-gadikota.jpg
-4. sarayu-vanga.jpg
-
-The image files are web-sized copies of the ORIGINAL supplied photographs; they have not been
-AI-edited or visually altered.
+Changes:
+- Replaces Haley's placeholder with her original supplied headshot and bio.
+- Replaces Hannah's placeholder with her original supplied headshot and bio.
+- No person's appearance has been edited or regenerated; only web resizing/framing is used.
