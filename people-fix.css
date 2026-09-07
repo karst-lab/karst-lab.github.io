@@ -119,3 +119,109 @@
     border-radius:14px;
   }
 }
+
+
+/* =========================================================
+   CURRENT TRAINEES — SINGLE VERTICAL LIST
+   Uses original supplied photos only; no retouching/editing.
+   ========================================================= */
+
+.people-page .current-grid {
+  max-width: 1180px !important;
+  margin: 0 auto !important;
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 0 !important;
+}
+
+.people-page .current-grid .person-card {
+  display: grid !important;
+  grid-template-columns: 300px minmax(0, 1fr) !important;
+  gap: 42px !important;
+  align-items: center !important;
+  padding: 28px 0 !important;
+  border-bottom: 1px solid #dbe7f2 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.people-page .current-grid .person-card:last-child {
+  border-bottom: 0 !important;
+}
+
+/* Real current-member photos: same displayed dimensions as PI portrait */
+.people-page .current-grid .current-member-photo {
+  display: block !important;
+  width: 300px !important;
+  height: 375px !important;
+  min-width: 300px !important;
+  max-width: 300px !important;
+  border-radius: 18px !important;
+  object-fit: cover !important;
+  background: #eef4f8 !important;
+}
+
+/* Rishi: preserve original photo, frame as portrait */
+.people-page .current-grid img[src*="rishi-gadikota"] {
+  object-position: center 22% !important;
+}
+
+/* Sarayu: crop the ORIGINAL supplied photo to a head-and-shoulders portrait.
+   This changes framing only; it does not alter her appearance. */
+.people-page .current-grid img[src*="sarayu-vanga"] {
+  object-position: center 34% !important;
+}
+
+/* Placeholder portraits for current trainees still awaiting photos */
+.people-page .current-grid .placeholder-photo {
+  width: 300px !important;
+  height: 375px !important;
+  min-width: 300px !important;
+  max-width: 300px !important;
+  border-radius: 18px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Give the bio area room to breathe */
+.people-page .current-grid .person-card-copy {
+  min-width: 0 !important;
+  max-width: 700px !important;
+}
+
+.people-page .current-grid .person-card-copy h3 {
+  margin-top: 0 !important;
+}
+
+@media (max-width: 800px) {
+  .people-page .current-grid .person-card {
+    grid-template-columns: 220px minmax(0, 1fr) !important;
+    gap: 26px !important;
+  }
+
+  .people-page .current-grid .current-member-photo,
+  .people-page .current-grid .placeholder-photo {
+    width: 220px !important;
+    height: 275px !important;
+    min-width: 220px !important;
+    max-width: 220px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .people-page .current-grid .person-card {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    align-items: start !important;
+  }
+
+  .people-page .current-grid .current-member-photo,
+  .people-page .current-grid .placeholder-photo {
+    width: 260px !important;
+    height: 325px !important;
+    min-width: 260px !important;
+    max-width: 260px !important;
+  }
+}
