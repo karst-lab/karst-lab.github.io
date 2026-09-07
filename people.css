@@ -1,0 +1,180 @@
+
+/* CLEAN PEOPLE PAGE — replaces all previous people-fix.css files.
+   Images are pre-cropped assets; CSS does not zoom or reposition individual people. */
+
+:root {
+  --people-blue: #0b3977;
+  --people-mid: #31598c;
+  --people-line: #d8e5f2;
+  --people-pale: #eef7fd;
+  --people-text: #173d70;
+}
+
+.people-page { color: var(--people-text); }
+
+.people-hero {
+  padding: 52px max(5vw, 70px) 44px;
+  background: linear-gradient(90deg, #eef7fd 0%, #f8fcff 72%, #eef7fd 100%);
+  border-bottom: 1px solid var(--people-line);
+}
+.people-hero .eyebrow, .past-members .eyebrow {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  color: #4672a6;
+}
+.people-hero h1 {
+  margin: 0 0 12px;
+  color: var(--people-blue);
+  font-size: clamp(40px, 4vw, 62px);
+  line-height: 1;
+}
+.people-hero > p:last-child {
+  max-width: 760px;
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.55;
+}
+
+.people-section {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 46px 52px;
+}
+.people-section > h2,
+.alumni-title h2,
+.past-members h2 {
+  margin: 0 0 26px;
+  color: var(--people-blue);
+  font-size: 30px;
+  line-height: 1.15;
+}
+.people-section > h2 {
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--people-line);
+}
+
+.current-list { display: grid; gap: 0; }
+.current-row {
+  display: grid;
+  grid-template-columns: 310px minmax(0, 1fr);
+  gap: 38px;
+  align-items: center;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--people-line);
+}
+.current-row img {
+  width: 310px;
+  height: 232px;
+  display: block;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.pi-row {
+  padding-top: 4px;
+  border-bottom: 0;
+}
+.pi-row img {
+  width: 310px;
+  height: 310px;
+}
+.current-row h3, .alumni-card h3 {
+  margin: 0 0 8px;
+  color: var(--people-blue);
+  font-size: 23px;
+  line-height: 1.2;
+}
+.current-row p {
+  max-width: 800px;
+  margin: 7px 0;
+  font-size: 17px;
+  line-height: 1.55;
+}
+.role {
+  color: var(--people-mid);
+  font-weight: 750;
+}
+.support {
+  color: #55759d;
+  font-weight: 650;
+}
+.placeholder-copy { color: #71869f; }
+
+.alumni-section { padding-top: 34px; }
+.alumni-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 24px;
+  padding-bottom: 14px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--people-line);
+}
+.alumni-title h2 { margin: 0; }
+.alumni-title p { margin: 0; color: #59718f; }
+
+.alumni-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  align-items: stretch;
+}
+.alumni-card {
+  overflow: hidden;
+  border: 1px solid var(--people-line);
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(17, 57, 104, .06);
+}
+.alumni-card img {
+  /* All source files are already exactly 4:3. No person-specific CSS. */
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  display: block;
+  object-fit: cover;
+}
+.alumni-copy {
+  padding: 22px 24px 25px;
+}
+.alumni-copy p {
+  margin: 9px 0;
+  font-size: 16px;
+  line-height: 1.42;
+}
+.alumni-copy .role { margin-top: 4px; }
+
+.past-members {
+  max-width: 1216px;
+  margin: 0 auto 50px;
+  padding: 28px 34px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  border-radius: 20px;
+  background: var(--people-pale);
+}
+.past-members h2 { margin: 0; }
+.past-members > p { max-width: 620px; margin: 0; line-height: 1.5; }
+
+@media (max-width: 900px) {
+  .people-section { padding: 36px 24px; }
+  .people-hero { padding: 40px 24px; }
+  .current-row { grid-template-columns: 220px 1fr; gap: 24px; }
+  .current-row img { width: 220px; height: 165px; }
+  .pi-row img { width: 220px; height: 220px; }
+  .alumni-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 620px) {
+  .current-row { grid-template-columns: 1fr; }
+  .current-row img, .pi-row img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+  .alumni-grid { grid-template-columns: 1fr; }
+  .alumni-title, .past-members { display: block; }
+  .alumni-title p { margin-top: 8px; }
+  .past-members > p { margin-top: 14px; }
+}
