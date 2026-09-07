@@ -91,3 +91,31 @@
     height: 300px !important;
   }
 }
+
+
+/* Current trainee headshots */
+.people-page .current-member-photo{
+  display:block;
+  width:132px !important;
+  height:132px !important;
+  min-width:132px !important;
+  object-fit:cover !important;
+  object-position:center 25%;
+  border-radius:16px;
+  background:#eef4f8;
+}
+.people-page .current-member-photo[src*="rishi"]{
+  object-position:center 20%;
+}
+.people-page .current-member-photo[src*="sarayu"]{
+  object-position:center 30%;
+}
+
+@media (max-width:560px){
+  .people-page .current-member-photo{
+    width:92px !important;
+    height:92px !important;
+    min-width:92px !important;
+    border-radius:14px;
+  }
+}

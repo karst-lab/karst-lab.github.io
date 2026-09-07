@@ -1,10 +1,12 @@
-PEOPLE PAGE IMAGE FIX
+Karst Lab People page — Rishi and Sarayu update
 
-Upload BOTH files to the ROOT of the GitHub repository:
-1. people.html — replace the existing people.html
-2. people-fix.css — new file
+Upload/replace at repository root:
+- people.html
+- people-fix.css
 
-Do not put people-fix.css inside the assets folder.
+Upload into assets:
+- rishi-gadikota.jpg
+- sarayu-vanga.jpg
 
-No image files need to be replaced. This fix constrains the PI photo and alumni
-photos and creates the intended 3-column alumni grid on desktop.
+Sarayu's bio now includes her current research project:
+the role of TGR5 in milk bile acid-mediated growth promotion during maternal high-fat diet feeding.
