@@ -1,20 +1,11 @@
-Karst Lab homepage visual correction
+Karst Lab - new standalone hero illustration
 
-Upload/replace these items at the root of:
-https://github.com/karst-lab/karst-lab.github.io
-
-Files:
+Upload/replace:
 - index.html
 - styles.css
-- assets/hero-art.png
-- assets/icon-virus.png
-- assets/icon-bile-acid.png
-- assets/icon-adipocytes.png
+- assets/hero-art.jpg
 
-Changes:
-- Removes the accidental box from the hero.
-- Shows the full milk droplet without the previous left-edge cropping.
-- Neonatal Immunity circle now uses a virus particle.
-- Milk Bile Acids circle now uses a bile-acid chemical structure.
-- Developmental Programming circle now uses adipocytes.
-- Keeps the existing footer placement/copy and Join Our Team copy.
+The new hero-art.jpg is the clean standalone illustration approved in ChatGPT.
+It contains no webpage crop artifact or rectangular box and preserves the full milk droplet.
+
+The existing research-panel icon files can remain unchanged.
