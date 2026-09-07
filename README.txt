@@ -1,19 +1,25 @@
-KARST LAB PEOPLE PAGE — CLEAN REBUILD
+Karst Lab People page — crop refinements
 
-This package intentionally replaces the old patch-based People page.
+This package keeps the clean rebuild layout:
+- Current trainees: large single-column list
+- Alumni: 3 cards per row on desktop
+- One people.css file, no people-fix.css
 
-UPLOAD/REPLACE:
-1. people.html
-2. styles.css
-3. people.css
-4. the entire assets/ folder supplied here
+Only four source crops were updated:
+1. Sarayu Vanga — tighter head-and-shoulders crop
+2. Zhengzheng Hu — face positioned higher in the frame
+3. Emily Helm — tighter crop centered more on her face, with less building background
+4. Mallory Cadiz — face moved upward and fully contained in the frame
 
-IMPORTANT:
-- Remove old references to people-fix.css. This people.html does not use it.
-- You may leave an old people-fix.css file on the server, but it must NOT be linked from people.html.
-- All portraits in this package were cropped/reframed only. No person's appearance was retouched or altered.
-- Alumni image files are physically standardized to the same 900 x 675 px (4:3) dimensions.
-- Current trainees are a single vertical list with larger photos.
-- Alumni are a three-column grid.
-- Alumni labels use the requested format: Former [Role] (YYYY–YYYY).
-- Elizabeth Chapman currently has a clean placeholder until her photo/bio is available.
+No person's appearance was edited or retouched; these are crop/reframe changes only.
+
+Upload/replace:
+- people.html
+- styles.css
+- people.css
+- assets/sarayu-vanga.jpg
+- assets/zhengzheng-hu.jpg
+- assets/emily-helm.jpg
+- assets/mallory-cadiz.jpg
+
+You can also replace the entire assets folder from this package if that is easier.
