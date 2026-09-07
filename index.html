@@ -6,7 +6,89 @@
   <title>Karst Laboratory | University of Florida</title>
   <meta name="description" content="The Karst Laboratory studies how maternal factors, microbial metabolites, and viruses interact during early life to shape neonatal disease, tissue development, and long-term metabolic health.">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="home-v2.css">
+  <link rel="stylesheet" href="home.css">
+
+<style id="homepage-final-size-fix">
+/* Critical homepage overrides — intentionally inline so GitHub/browser caching cannot block them. */
+
+.home-page .lab-hero {
+  grid-template-columns: minmax(390px, 38%) minmax(0, 62%) !important;
+  min-height: 450px !important;
+}
+
+.home-page .lab-hero-copy {
+  padding: 32px 26px 32px 4.1vw !important;
+}
+
+.home-page .hero-kicker {
+  font-size: 0.60rem !important;
+  margin-bottom: 12px !important;
+}
+
+.home-page .lab-hero h1 {
+  font-size: clamp(2.65rem, 3.0vw, 3.55rem) !important;
+  line-height: 0.98 !important;
+  margin-bottom: 9px !important;
+}
+
+.home-page .lab-hero h2 {
+  font-size: clamp(1.48rem, 1.65vw, 1.82rem) !important;
+  line-height: 1.10 !important;
+  max-width: 535px !important;
+  margin-bottom: 14px !important;
+}
+
+.home-page .lab-hero-copy > p {
+  font-size: 0.88rem !important;
+  line-height: 1.45 !important;
+  max-width: 540px !important;
+  margin-bottom: 18px !important;
+}
+
+.home-page .lab-hero .button {
+  font-size: 0.84rem !important;
+  padding: 11px 17px !important;
+}
+
+.home-page .lab-hero-art {
+  min-height: 450px !important;
+  padding: 0 8px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #eef8ff !important;
+}
+
+.home-page .lab-hero-art img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 450px !important;
+  min-height: 0 !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  display: block !important;
+}
+
+.home-page .home-section-intro h2 {
+  font-size: clamp(1.65rem, 1.85vw, 2.0rem) !important;
+  line-height: 1.08 !important;
+}
+
+@media (max-width: 1120px) {
+  .home-page .lab-hero {
+    grid-template-columns: 1fr !important;
+  }
+  .home-page .lab-hero-art {
+    min-height: 0 !important;
+  }
+  .home-page .lab-hero-art img {
+    width: 100% !important;
+    max-height: none !important;
+  }
+}
+</style>
+
 </head>
 
 <body class="home-page">
@@ -38,7 +120,7 @@
     </div>
 
     <div class="lab-hero-art">
-      <img src="assets/home-hero-illustration-v2.jpg"
+      <img src="assets/home-hero-illustration-v3.jpg"
            alt="Scientific illustration showing maternal microbiota influencing bile acids in milk, which shape antiviral immunity, adipose tissue development, and long-term metabolic health.">
     </div>
   </section>
