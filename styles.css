@@ -276,9 +276,10 @@ nav a.active{
 
 .tagline{
   margin-top:14px!important;
-  color:#4d78b1;
-  font-style:italic;
+  color:var(--navy);
+  font-style:normal;
   font-size:1rem!important;
+  letter-spacing:.005em;
 }
 
 footer{
