@@ -1,13 +1,29 @@
-SARAYU NEW PHOTO REPLACEMENT
+Karst Lab People page — added former undergraduates
 
-This version uses the newly supplied Sarayu photo exactly as provided.
+Changes:
+- Added Quyen Nguyen:
+  Former Undergraduate Researcher (2020–2024)
+  McNair Scholar, UF SIMR Intern, UFCOM University Scholar, Duke Amgen Scholar
+  PhD Candidate, Duke University
+
+- Added Meera Nair:
+  Former Undergraduate Researcher (2021–2025)
+  UF SIMR Intern
+  MD Candidate, Wake Forest School of Medicine
+
+- Added Neha Iyer:
+  Former Undergraduate Researcher (2021–2024)
+  UFCOM University Scholar
+
+- Added UFCOM University Scholar to Sarayu Vanga's current-trainee entry.
+
+The existing three-column Recent Alumni grid is preserved.
+No changes were made to anyone's appearance.
 
 Upload/replace:
 - people.html
-- people.css
-- assets/sarayu-vanga-new.jpg
+- assets/quyen-nguyen.jpg
+- assets/meera-nair.jpg
+- assets/neha-iyer.jpg
 
-Important:
-- Do NOT rename sarayu-vanga-new.jpg.
-- The new filename is intentional so the browser/GitHub Pages cannot keep showing an older cached Sarayu image.
-- The photo itself was copied byte-for-byte. No crop, resize, retouch, or regeneration was applied.
+No CSS changes are required for this update.
