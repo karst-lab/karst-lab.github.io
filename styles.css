@@ -465,3 +465,38 @@ footer span + span:before{
     height:58px !important;
   }
 }
+
+/* Final research-area icon fix: show each complete circular visual */
+.research-grid .icon.image-icon{
+  width:76px !important;
+  height:76px !important;
+  min-width:76px !important;
+  flex:0 0 76px !important;
+  padding:0 !important;
+  margin:0 !important;
+  overflow:visible !important;
+  background:transparent !important;
+  border-radius:50% !important;
+}
+.research-grid .icon.image-icon img{
+  width:76px !important;
+  height:76px !important;
+  max-width:none !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  display:block !important;
+  border-radius:50% !important;
+}
+
+@media (max-width:650px){
+  .research-grid .icon.image-icon{
+    width:62px !important;
+    height:62px !important;
+    min-width:62px !important;
+    flex-basis:62px !important;
+  }
+  .research-grid .icon.image-icon img{
+    width:62px !important;
+    height:62px !important;
+  }
+}

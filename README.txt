@@ -1,18 +1,18 @@
-Karst Lab homepage - final alignment revision
+Karst Lab — middle-panel icon correction
+
+This package keeps the current approved hero illustration unchanged.
 
 Upload/replace:
 ROOT:
 - index.html
 - styles.css
 
-ASSETS folder:
-- hero-art.jpg
+ASSETS:
 - icon-virus.png
 - icon-bile-acid.png
 - icon-adipocytes.png
 
-Changes:
-- Hero illustration shifted slightly left.
-- Full right edge of hero preserved.
-- No hanging vertical edge between text and artwork.
-- Research-area circles display the complete virus, bile-acid structure, and adipocyte visuals without cropping.
+The three research-area circles now use complete, uncropped visuals:
+- virus particle
+- bile acid chemical structure
+- adipocytes
