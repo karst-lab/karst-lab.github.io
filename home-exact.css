@@ -1,0 +1,380 @@
+
+/* KARST LAB HOMEPAGE — exact return to the earlier reference layout
+   The only intentional identity change is the department name in the header. */
+
+.home-page{
+  --navy:#0a3275;
+  --blue:#075ec7;
+  --text:#28486f;
+  --line:#dbe8f5;
+  --hero:#eef8ff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+.home-page .site-header{
+  min-height:76px;
+  padding:10px 4.6vw;
+  background:#fff;
+  position:sticky;
+  top:0;
+  z-index:50;
+}
+
+.home-page .site-header .brand-name{
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:1.04rem;
+  line-height:1.12;
+  font-weight:750;
+  letter-spacing:-.02em;
+  max-width:455px;
+}
+
+.home-page .brand-subtitle{
+  margin-top:5px;
+  font-size:.68rem;
+  letter-spacing:.26em;
+}
+
+.home-page nav{
+  gap:27px;
+}
+
+.home-page nav a{
+  font-size:.9rem;
+}
+
+/* HERO — one color, one continuous box */
+.home-page .lab-hero{
+  display:grid;
+  grid-template-columns:37% 63%;
+  min-height:510px;
+  background:var(--hero);
+  border-bottom:1px solid var(--line);
+  overflow:hidden;
+}
+
+.home-page .lab-hero-copy{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:38px 18px 38px 4.6vw;
+  background:transparent;
+  border:0;
+  position:relative;
+  z-index:2;
+}
+
+.home-page .hero-kicker{
+  margin-bottom:15px;
+  color:#0b4b9f;
+  font-size:.68rem;
+  font-weight:750;
+  letter-spacing:.13em;
+  white-space:nowrap;
+}
+
+.home-page .hero-kicker span{
+  color:#7192bb;
+  padding:0 .34em;
+}
+
+/* Smaller so Karst Laboratory stays on one line */
+.home-page .lab-hero h1{
+  margin:0 0 10px;
+  color:var(--navy);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:clamp(3rem,3.75vw,4.15rem);
+  line-height:.98;
+  font-weight:780;
+  letter-spacing:-.045em;
+  white-space:nowrap;
+}
+
+/* Reduced subtitle to match the reference proportions */
+.home-page .lab-hero h2{
+  margin:0 0 17px;
+  max-width:570px;
+  color:var(--navy);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(1.62rem,2.05vw,2.15rem);
+  line-height:1.09;
+  font-weight:500;
+  letter-spacing:-.025em;
+}
+
+.home-page .lab-hero-copy > p{
+  margin:0 0 21px;
+  max-width:560px;
+  color:#173b6d;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:.98rem;
+  line-height:1.48;
+}
+
+.home-page .lab-hero .button{
+  align-self:flex-start;
+  padding:12px 22px;
+  font-size:.94rem;
+  gap:18px;
+}
+
+.home-page .lab-hero-art{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-width:0;
+  overflow:hidden;
+  background:var(--hero);
+  padding:0;
+}
+
+.home-page .lab-hero-art img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center center;
+  display:block;
+}
+
+/* MIDDLE RESEARCH AREA — one continuous box with internal dividers */
+.home-page .home-research{
+  padding:0;
+  margin:0;
+  background:#fff;
+  border-bottom:1px solid var(--line);
+}
+
+.home-page .home-section-intro{
+  display:none;
+}
+
+.home-page .home-research-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:0;
+  margin:0;
+  background:#f5faff;
+  border-top:1px solid #e5eef7;
+  border-bottom:1px solid #e5eef7;
+}
+
+.home-page .home-research-card{
+  display:grid;
+  grid-template-columns:38% 62%;
+  align-items:center;
+  min-height:235px;
+  overflow:hidden;
+  border:0;
+  border-radius:0;
+  background:#f5faff;
+  box-shadow:none;
+}
+
+.home-page .home-research-card + .home-research-card{
+  border-left:1px solid #cfe0f1;
+}
+
+.home-page .home-card-image{
+  height:100%;
+  min-height:235px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:22px 8px 22px 26px;
+  background:transparent;
+}
+
+.home-page .home-card-image img{
+  width:100%;
+  height:100%;
+  max-width:135px;
+  max-height:135px;
+  object-fit:contain;
+  display:block;
+}
+
+.home-page .virus-card-image img{
+  max-width:145px;
+  max-height:145px;
+}
+
+.home-page .home-card-copy{
+  padding:24px 24px 24px 6px;
+}
+
+.home-page .home-card-copy h3{
+  margin:0 0 9px;
+  color:var(--navy);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.48rem;
+  line-height:1.06;
+  font-weight:600;
+  letter-spacing:-.018em;
+}
+
+.home-page .home-card-copy p{
+  margin:0 0 14px;
+  min-height:auto;
+  color:#35547d;
+  font-size:.91rem;
+  line-height:1.46;
+}
+
+.home-page .home-card-copy a{
+  font-size:.91rem;
+  font-weight:700;
+}
+
+/* LOWER SECTION — preserve the compact reference feel */
+.home-page .home-lower{
+  display:grid;
+  grid-template-columns:1.55fr .78fr;
+  background:#fff;
+}
+
+.home-page .home-news{
+  padding:22px 3.2vw 24px 4.6vw;
+  border-right:1px solid var(--line);
+}
+
+.home-page .home-join{
+  padding:22px 4.6vw 24px 3vw;
+  background:linear-gradient(135deg,#fbfdff 0%,#eef7ff 100%);
+}
+
+.home-page .section-heading{
+  padding-bottom:7px;
+}
+
+.home-page .section-heading h2,
+.home-page .home-join h2{
+  font-size:1.42rem;
+  line-height:1.05;
+  font-weight:760;
+  letter-spacing:-.02em;
+}
+
+.home-page .news-items{
+  margin-top:12px;
+}
+
+.home-page .news-items article{
+  min-height:72px;
+}
+
+.home-page .news-items h4{
+  font-size:.85rem;
+}
+
+.home-page .news-items p{
+  font-size:.79rem;
+  line-height:1.3;
+}
+
+.home-page .home-join > p:not(.tagline){
+  margin:8px 0 12px;
+  font-size:.85rem;
+  line-height:1.4;
+}
+
+.home-page .home-join .outline-button{
+  background:#fff;
+  color:#0753b1;
+  border:1.5px solid #0753b1;
+  box-shadow:none;
+  padding:10px 18px;
+  font-size:.85rem;
+}
+
+.home-page .tagline{
+  margin-top:12px!important;
+  font-size:.86rem!important;
+  line-height:1.35;
+}
+
+.home-page footer{
+  padding-top:12px;
+  padding-bottom:12px;
+  font-size:.72rem;
+}
+
+/* RESPONSIVE */
+@media (max-width:1180px){
+  .home-page .lab-hero{
+    grid-template-columns:40% 60%;
+  }
+  .home-page .lab-hero h1{
+    font-size:3rem;
+  }
+}
+
+@media (max-width:1020px){
+  .home-page .site-header{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .home-page .lab-hero{
+    grid-template-columns:1fr;
+    min-height:0;
+  }
+
+  .home-page .lab-hero-copy{
+    padding:34px 6vw 22px;
+  }
+
+  .home-page .hero-kicker{
+    white-space:normal;
+  }
+
+  .home-page .lab-hero h1{
+    white-space:normal;
+  }
+
+  .home-page .lab-hero-art img{
+    height:auto;
+  }
+
+  .home-page .home-research-grid{
+    grid-template-columns:1fr;
+  }
+
+  .home-page .home-research-card + .home-research-card{
+    border-left:0;
+    border-top:1px solid #cfe0f1;
+  }
+
+  .home-page .home-lower{
+    grid-template-columns:1fr;
+  }
+
+  .home-page .home-news{
+    border-right:0;
+    border-bottom:1px solid var(--line);
+  }
+}
+
+@media (max-width:620px){
+  .home-page .lab-hero h1{
+    font-size:2.7rem;
+  }
+
+  .home-page .lab-hero h2{
+    font-size:1.55rem;
+  }
+
+  .home-page .home-research-card{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .home-page .home-card-image{
+    min-height:150px;
+    padding:20px 20px 4px;
+  }
+
+  .home-page .home-card-copy{
+    padding:8px 24px 22px;
+  }
+}

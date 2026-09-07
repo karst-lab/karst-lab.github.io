@@ -1,23 +1,33 @@
-KARST LAB HOMEPAGE — REVERTED TO THE REFERENCE FORMAT
+KARST LAB HOMEPAGE — EXACT REFERENCE-STYLE VERSION
 
-This version intentionally returns the homepage to the format in your reference image.
+This version addresses the specific differences you pointed out:
 
-What is restored:
-- One continuous hero area containing both text and illustration
-- Large "Karst Laboratory" hero title
-- Serif scientific statement underneath
-- Three large horizontal research tiles directly beneath the hero
-- No "Our Research / From early-life signals..." heading above those tiles
+TOP HERO
+- Entire top block is one pale-blue color.
+- "Karst Laboratory" is smaller and stays on one line on desktop.
+- The sentence beneath it is smaller.
+- Text and illustration are visually part of the same continuous box.
 
-The ONE intentional change from the reference:
-- Header branding reads "Department of Molecular Genetics and Microbiology"
-  with "UNIVERSITY OF FLORIDA" beneath it.
+MIDDLE RESEARCH BOX
+- Restored the exact earlier image assets shown in your reference:
+  * virus image
+  * bile-acid icon
+  * adipocyte icon
+- The three research areas are now one continuous pale-blue box with simple vertical dividers,
+  rather than three separate cards.
 
-The lower Latest News / Join Our Team / footer content is retained.
+HEADER
+- The one intentional change from your reference is retained:
+  "Department of Molecular Genetics and Microbiology"
+  with "UNIVERSITY OF FLORIDA" underneath.
 
 UPLOAD / REPLACE:
 1. Replace index.html
-2. Add home-reference.css
-3. Keep assets/home-hero-polished.jpg in the assets folder
+2. Add home-exact.css
+3. Add/replace:
+   assets/icon-virus.png
+   assets/icon-bile-acid.png
+   assets/icon-adipocytes.png
+   assets/home-hero-polished.jpg
 
-The new index.html points to home-reference.css, so older homepage CSS files will not affect it.
+The new index.html references only home-exact.css for the homepage layout.
