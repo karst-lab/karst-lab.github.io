@@ -6,89 +6,7 @@
   <title>Karst Laboratory | University of Florida</title>
   <meta name="description" content="The Karst Laboratory studies how maternal factors, microbial metabolites, and viruses interact during early life to shape neonatal disease, tissue development, and long-term metabolic health.">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="home.css">
-
-<style id="homepage-final-size-fix">
-/* Critical homepage overrides — intentionally inline so GitHub/browser caching cannot block them. */
-
-.home-page .lab-hero {
-  grid-template-columns: minmax(390px, 38%) minmax(0, 62%) !important;
-  min-height: 450px !important;
-}
-
-.home-page .lab-hero-copy {
-  padding: 32px 26px 32px 4.1vw !important;
-}
-
-.home-page .hero-kicker {
-  font-size: 0.60rem !important;
-  margin-bottom: 12px !important;
-}
-
-.home-page .lab-hero h1 {
-  font-size: clamp(2.65rem, 3.0vw, 3.55rem) !important;
-  line-height: 0.98 !important;
-  margin-bottom: 9px !important;
-}
-
-.home-page .lab-hero h2 {
-  font-size: clamp(1.48rem, 1.65vw, 1.82rem) !important;
-  line-height: 1.10 !important;
-  max-width: 535px !important;
-  margin-bottom: 14px !important;
-}
-
-.home-page .lab-hero-copy > p {
-  font-size: 0.88rem !important;
-  line-height: 1.45 !important;
-  max-width: 540px !important;
-  margin-bottom: 18px !important;
-}
-
-.home-page .lab-hero .button {
-  font-size: 0.84rem !important;
-  padding: 11px 17px !important;
-}
-
-.home-page .lab-hero-art {
-  min-height: 450px !important;
-  padding: 0 8px !important;
-  overflow: hidden !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  background: #eef8ff !important;
-}
-
-.home-page .lab-hero-art img {
-  width: 100% !important;
-  height: auto !important;
-  max-height: 450px !important;
-  min-height: 0 !important;
-  object-fit: contain !important;
-  object-position: center center !important;
-  display: block !important;
-}
-
-.home-page .home-section-intro h2 {
-  font-size: clamp(1.65rem, 1.85vw, 2.0rem) !important;
-  line-height: 1.08 !important;
-}
-
-@media (max-width: 1120px) {
-  .home-page .lab-hero {
-    grid-template-columns: 1fr !important;
-  }
-  .home-page .lab-hero-art {
-    min-height: 0 !important;
-  }
-  .home-page .lab-hero-art img {
-    width: 100% !important;
-    max-height: none !important;
-  }
-}
-</style>
-
+  <link rel="stylesheet" href="home-polished.css">
 </head>
 
 <body class="home-page">
@@ -120,13 +38,13 @@
     </div>
 
     <div class="lab-hero-art">
-      <img src="assets/home-hero-illustration-v3.jpg"
-           alt="Scientific illustration showing maternal microbiota influencing bile acids in milk, which shape antiviral immunity, adipose tissue development, and long-term metabolic health.">
+      <img src="assets/home-hero-polished.jpg"
+           alt="Maternal microbiota and bile acids in milk shape antiviral immunity, adipose tissue development, and long-term metabolic health.">
     </div>
   </section>
 
-  <section class="home-research" aria-labelledby="research-heading">
-    <div class="home-section-intro">
+  <section class="research-strip" aria-labelledby="research-heading">
+    <div class="research-strip-heading">
       <div>
         <div class="eyebrow">OUR RESEARCH</div>
         <h2 id="research-heading">From early-life signals to lifelong health</h2>
@@ -134,34 +52,34 @@
       <a href="research.html" class="section-link">Learn more about our research →</a>
     </div>
 
-    <div class="home-research-grid">
-      <article class="home-research-card">
-        <div class="home-card-image virus-card-image">
+    <div class="research-strip-grid">
+      <article class="research-strip-card">
+        <div class="research-strip-icon">
           <img src="assets/icon-norovirus.png" alt="Nonenveloped norovirus virion">
         </div>
-        <div class="home-card-copy">
+        <div>
           <h3>Viruses &amp; Neonatal Immunity</h3>
           <p>How viruses, the microbiome, and maternal signals shape antiviral defenses and disease susceptibility in early life.</p>
           <a href="research.html#immunity">Learn more →</a>
         </div>
       </article>
 
-      <article class="home-research-card">
-        <div class="home-card-image">
+      <article class="research-strip-card">
+        <div class="research-strip-icon bile-icon">
           <img src="assets/icon-bile-acid.png" alt="Bile acid chemical structure">
         </div>
-        <div class="home-card-copy">
+        <div>
           <h3>Maternal &amp; Microbial Metabolites</h3>
           <p>How bile acids carried in milk function as signaling molecules that regulate neonatal physiology.</p>
           <a href="research.html#bile-acids">Learn more →</a>
         </div>
       </article>
 
-      <article class="home-research-card">
-        <div class="home-card-image">
+      <article class="research-strip-card">
+        <div class="research-strip-icon dev-icon">
           <img src="assets/icon-adipocytes.png" alt="Adipose tissue">
         </div>
-        <div class="home-card-copy">
+        <div>
           <h3>Developmental Programming</h3>
           <p>How transient exposures during early life reshape tissue development and lifelong metabolic health.</p>
           <a href="research.html#programming">Learn more →</a>
