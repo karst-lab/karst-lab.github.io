@@ -1,15 +1,16 @@
-Karst Lab adipocyte icon v2
+Karst Lab People page
 
-This version uses a NEW filename so GitHub/browser caching cannot keep showing the old image.
-
-Upload/replace:
-ROOT:
-- index.html
+Upload/replace at repository root:
+- people.html
 - styles.css
 
-ASSETS:
-- icon-adipocytes-v2.png
+Upload into assets:
+- stephanie-karst.jpg
+- lufuno-phophi.jpg
+- amy-peiper.jpg
+- joyce-morales.jpg
+- zhengzheng-hu.jpg
+- marco-grodzki.jpg
+- emily-helm.jpg
 
-Do NOT rename icon-adipocytes-v2.png.
-
-The homepage now points specifically to assets/icon-adipocytes-v2.png.
+Current trainee photo/bio placeholders are built into people.html and require no additional files.
