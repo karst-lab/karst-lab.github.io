@@ -1,0 +1,9 @@
+/* Sarayu Vanga — preserve Stephanie's supplied crop exactly */
+.alumni-card img[src$="sarayu-vanga.jpg"],
+.alumni-card img[src*="sarayu-vanga"] {
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+  object-position: center center !important;
+  background: #fff;
+}
